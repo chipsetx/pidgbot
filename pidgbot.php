@@ -251,13 +251,13 @@ while(1)
 						if ( $to_whom != $nick )
 						{
 							// Channel message
-							debug("<$user_nick:$to_whom> $content", 3);
+							debug("<$user_nick:$to_whom> $content", 1);
 		
 							$reply_to = $to_whom;	// Send any replies to the channel
 
 						} else {
 							// Private message
-							debug("<$user_nick> $content", 3);	
+							debug("<$user_nick> $content", 1);	
 
 							$reply_to = $user_nick;	// Send any replies directly to user
 						}
