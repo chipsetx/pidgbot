@@ -7,9 +7,9 @@ This is really a template which is intended to be extended into a useful bot.
 
 The only built-in commands are:
 
-!uptime - returns uptime
-!join #channel - instruct bot to join a channel
-!part #channel - instruct bot to leave a channel
-!die - quits gracefully then dies
+* !uptime - returns uptime
+* !join #channel - instruct bot to join a channel
+* !part #channel - instruct bot to leave a channel
+* !die - quits gracefully then dies
 
 All commands (except !uptime) require the user's hostmask to match one of those stored in the $owners array.
