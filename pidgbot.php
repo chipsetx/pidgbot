@@ -2,7 +2,7 @@
 
 /*
 	pidgbot
-	Copyright (C) 2020 Taras Young
+	Copyright (C) 2020 @tarasyoung
 	
 	This program is free software; you can redistribute it and/or
 	modify it under the terms of the GNU General Public License
@@ -43,7 +43,7 @@ function debug($output, $incoming=0)
 	$output = trim($output);
 	if ( $output )
 	{
-		$symbol = array("<-", "->", "--", "!!", ":)");
+		$symbol = array("<-", "->", "--", "<>", "!!", ":)");
 		echo ($incoming)? $symbol[$incoming] : $symbol[0];
 		echo " $output\n"; 
 	}
@@ -87,8 +87,8 @@ function irc_connect($host, $port=6667, $nick="pidgbot", $pass="", $user="pidgbo
 {
 	// Connects to an irc server
 
-	debug ( "pidgbot by @pidg - an irc client/bot written in php", 4 );
-	debug ( "This software is licensed under the GNU General Public License v2 (or higher).", 4);
+	debug ( "pidgbot by @pidg - an irc client/bot written in php", 5 );
+	debug ( "This software is licensed under the GNU General Public License v2 (or higher).", 5);
 	echo "\n";
 
 	debug ("Connecting to $host:$port ...", 2);
@@ -195,7 +195,7 @@ while(1)
 			{
 				// Respond to server pings to keep connection alive
 				irc_do ($socket, "PONG " . $e[1], 0);
-				debug("PING? PONG!", 2);
+				debug("PING? PONG!", 3);
 			}
 
 
@@ -215,7 +215,7 @@ while(1)
 					if ( !stristr($e[0], "!" ) )
 					{
 						// Notice from server
-						debug($content, 3);
+						debug($content, 4);
 	
 					} else {
 
@@ -227,9 +227,9 @@ while(1)
 						// Notice from user (including services)
 						if ( $to_whom != $nick )
 						{
-							debug("-$user_nick:$to_whom- $content", 3);	// Wide notice
+							debug("-$user_nick:$to_whom- $content", 4);	// Wide notice
 						} else {
-							debug("-$user_nick($user_host)- $content", 3);	// Narrow notice
+							debug("-$user_nick($user_host)- $content", 4);	// Narrow notice
 						}
 					}
 
@@ -292,7 +292,7 @@ while(1)
 								{
 									// Quit and die
 									irc_do ( $socket, "QUIT :$quitmsg" );
-									debug ( "Terminating. Bye!", 4 );
+									debug ( "Terminating. Bye!", 5 );
 									die();
 								}
 
