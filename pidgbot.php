@@ -28,7 +28,7 @@
   $pass = "";					// Server password (NOT NickServ password)
   $user = "pidgbot";				// Real name
   $usermode = "-x";				// Any usermodes to set/unset on connection
-  $channels = array("#lobby");		// Array containing channels to auto-join on connection
+  $channels = array("#lobby");			// Array containing channels to auto-join on connection
   $owners = array("bob!*@*example.org");	// Array containing hostmasks of owners (use wildcards * ?) e.g. bob!*@example.org
   $verbose = 1;					// Whether all text received is output to the console
   $quitmsg = "Goodbye";				// Message to send on quit
