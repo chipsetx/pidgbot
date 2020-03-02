@@ -24,7 +24,7 @@
 /* = Settings ================ */
   $host = "irc.example.org";			// Server address
   $port = 6667;					// Port
-  $nick = "pidgbot";				// Nick
+  $nick = "pidgbot";				// Nickname
   $pass = "";					// Server password (NOT NickServ password)
   $user = "pidgbot";				// Real name
   $usermode = "";				// Any usermodes to set/unset on connection e.g. -x
