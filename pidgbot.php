@@ -2,7 +2,7 @@
 
 /*
 	pidgbot
-	Copyright (C) 2020 @tarasyoung
+	Copyright (C) 2020 Taras Young
 	
 	This program is free software; you can redistribute it and/or
 	modify it under the terms of the GNU General Public License
@@ -27,7 +27,7 @@
   $nick = "pidgbot";				// Nick
   $pass = "";					// Server password (NOT NickServ password)
   $user = "pidgbot";				// Real name
-  $usermode = "-x";				// Any usermodes to set/unset on connection
+  $usermode = "";				// Any usermodes to set/unset on connection e.g. -x
   $channels = array("#lobby");			// Array containing channels to auto-join on connection
   $owners = array("bob!*@*example.org");	// Array containing hostmasks of owners (use wildcards * ?) e.g. bob!*@example.org
   $verbose = 1;					// Whether all text received is output to the console
