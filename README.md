@@ -1,7 +1,7 @@
 # pidgbot
 This is a simple IRC bot/client written in PHP using the sockets extension.
 
-![Screenshot of pidgbot](https://raw.githubusercontent.com/pidg/pidgbot/master/example.png)
+![Screenshot of pidgbot](https://raw.githubusercontent.com/pidg/pidgbot/master/screenshot.png)
 
 I couldn't find a good, well-functioning example of a PHP irc bot (perhaps for good reason). Against my better judgement, I decided to write one.
 
