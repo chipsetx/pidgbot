@@ -2,7 +2,7 @@
 
 /*
 	pidgbot
-	Copyright (C) 2020 @tarasyoung
+	Copyright (C) 2020 Taras Young
 	
 	This program is free software; you can redistribute it and/or
 	modify it under the terms of the GNU General Public License
